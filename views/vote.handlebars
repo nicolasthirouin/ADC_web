@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Avions de Chasse</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="../assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="../assets/css/main2.css" />
+
+    <!--[if lte IE 9]><link rel="stylesheet" href="../assets/css/ie9.css" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="../assets/css/ie8.css" /><![endif]-->
+
+  </head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+							<center>
+								<a href="../" class="logo">
+							<span class="title">Avions de Chasse</span>
+								</a>
+								</center
+
+						</div>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+            {{#each avions}}
+  						<div class="inner small-main">
+  							<span class="image main"><center><img class="taille" src="{{url}}" alt="" /></center></span>
+  							<p class="align-center large-text">
+  								<i class="fa fa-heart-o" aria-hidden="true"></i> {{votes}}
+  							</p>
+  							<p class="align-center">
+                  <form action="/vote/done" method="post">
+                    <input name="id" type="hidden" value="{{id}}"></input>
+  								<center>	<input class="button special fit big" type="submit" value="Voter"></input></center>
+                  </form>
+  							</p>
+
+
+
+
+  						</div>
+            {{/each}}
+
+					</div>
+
+
+
+
+									<!-- Footer -->
+					<footer id="footer" >
+						<div >
+							<div>
+								<center>
+								<section>
+									<h2>Web Application</h2>
+									<p>Nicolas THIROUIN</p>
+									<p>Valentin TRAN</p>
+								</section>
+								<br />
+								<br />
+
+								<p class="copyright petit">
+									&copy; Untitled. Design: <a href="www.justdev.fr">JustDev.fr</a>.
+								</p>
+								</center>
+							</div>
+							<div>
+							</div>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/skel.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="../assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="../assets/js/main.js"></script>
+	</body>
+</html>
