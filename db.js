@@ -38,7 +38,7 @@ module.exports.read = function (callback) {
 }
 
 /**
- * Get selected cat
+ * Get selected avion
  */
 module.exports.selectAvions = function (id, callback) {
   var datas = [];
@@ -59,7 +59,7 @@ module.exports.selectAvions = function (id, callback) {
 }
 
 /**
- * Vote for one cat selected
+ * Vote for one avion selected
  */
 module.exports.vote = function (id, callback) {
   var datas = [];
