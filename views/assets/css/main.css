@@ -10,8 +10,13 @@
 /* Reset */
 
 
+.gras {
+	font-weight: bold;
+}
 
-
+.fa {
+	color : red !important;
+}
 
 .paddingcoeur {
 	
@@ -227,7 +232,7 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		color: white;
 		font-weight: 300;
 		letter-spacing: 0.1em;
 		line-height: 1.5;
@@ -1838,8 +1843,8 @@
 				-ms-transition-delay: 1.625s;
 				transition-delay: 1.625s;
 				height: calc(40vh - 2em);
-				min-height: 20em;
-				width: 50%;
+				min-height: 25em;
+				width: 25%;
 			}
 
 				#main .thumb:nth-child(1) {
