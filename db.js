@@ -37,9 +37,6 @@ module.exports.read = function (callback) {
   });
 }
 
-/**
- * Get selected cat
- */
 module.exports.selectAvions = function (id, callback) {
   var datas = [];
   var query = 'SELECT * FROM Avions WHERE id = "' + id + '"';
@@ -58,9 +55,6 @@ module.exports.selectAvions = function (id, callback) {
   });
 }
 
-/**
- * Vote for one cat selected
- */
 module.exports.vote = function (id, callback) {
   var datas = [];
   var query = 'UPDATE Avions SET votes = votes + 1 WHERE id = "' + id + '"';
